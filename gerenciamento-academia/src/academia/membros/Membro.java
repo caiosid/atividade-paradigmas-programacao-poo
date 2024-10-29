@@ -36,6 +36,6 @@ public class Membro {
     }
 
     public String verificarStatusPagamento(){
-        return pagamentoEmDia ? "Pagamento em dia" : "Pagamento atrasado";
+        return pagamentoEmDia ?  "Pagamento em dia" : "Pagamento atrasado";
     }
 }
