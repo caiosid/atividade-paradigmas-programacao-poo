@@ -1,9 +1,8 @@
 package academia.aulas;
 
+import academia.membros.Membro;
 import java.util.ArrayList;
 import java.util.List;
-
-import academia.membros.Membro;
 
 public class Aula {
     private String nome;
@@ -52,7 +51,5 @@ public class Aula {
             System.out.println("- " + membro.getNome());
         }
     }
-
-    
-    
+ 
 }
