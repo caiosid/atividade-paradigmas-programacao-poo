@@ -38,4 +38,13 @@ public class RegistroFrequencia {
     public void setDate(Date date) {
         this.date = date;
     }
+
+    @Override
+    public String toString() {
+    return "RegistroFrequencia{" +
+            "aula=" + aula.getNome() +
+            ", membro=" + membro.getNome() +
+            ", date=" + date +
+            '}';
+    }
 }
