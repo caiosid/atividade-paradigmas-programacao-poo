@@ -1,3 +1,4 @@
+package academia;
 
 public class Membro {
     private String nome;
