@@ -24,6 +24,9 @@ public class Membro {
     }
 
     public void setId(int id) {
+        if (id <= 0) {
+            throw new IllegalArgumentException("ID deve ser positivo");
+        }
         this.id = id;
     }
 
@@ -38,4 +41,11 @@ public class Membro {
     public String verificarStatusPagamento(){
         return pagamentoEmDia ?  "Pagamento em dia" : "Pagamento atrasado";
     }
+
+    @Override
+    public String toString() {
+        return "Membro [nome=" + nome + ", id=" + id + ", pagamentoEmDia=" + pagamentoEmDia + "]";
+    }
+
+    
 }
