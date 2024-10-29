@@ -1,4 +1,4 @@
-package academia;
+package academia.membros;
 
 public class Membro {
     private String nome;

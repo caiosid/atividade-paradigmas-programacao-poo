@@ -1,15 +1,17 @@
-package academia;
+package academia.aulas;
 
 import java.util.ArrayList;
 import java.util.List;
 
-public class Aulas {
+import academia.membros.Membro;
+
+public class Aula {
     private String nome;
     private String instrutor;
     private int capacidadeMaxima;
     private List<Membro> listaMembrosInscritos;
 
-    public Aulas(int capacidadeMaxima, String instrutor, String nome) {
+    public Aula(int capacidadeMaxima, String instrutor, String nome) {
         this.capacidadeMaxima = capacidadeMaxima;
         this.instrutor = instrutor;
         this.nome = nome;
