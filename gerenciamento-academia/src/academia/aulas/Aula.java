@@ -45,11 +45,27 @@ public class Aula {
         return listaMembrosInscritos.size() < capacidadeMaxima;
     }
 
+    public boolean removerMembro(Membro membro){
+        return listaMembrosInscritos.remove(membro);
+    }
+
     public void listarMembrosInscritos(){
         System.out.println("Membros inscritos na aula " + nome + ":");
         for(Membro membro : listaMembrosInscritos){
             System.out.println("- " + membro.getNome());
         }
     }
- 
+
+    
+    @Override
+    public String toString() {
+    return "Aula{" +
+            "nome='" + nome + '\'' +
+            ", instrutor='" + instrutor + '\'' +
+            ", capacidadeMaxima=" + capacidadeMaxima +
+            ", membrosInscritos=" + listaMembrosInscritos.size() +
+    
+            '}';
+    }
+
 }
