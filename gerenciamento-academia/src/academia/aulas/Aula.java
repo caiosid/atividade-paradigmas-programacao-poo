@@ -1,18 +1,19 @@
 package academia.aulas;
 
 import academia.membros.Membro;
+import academia.membros.Professor;
+
 import java.util.ArrayList;
 import java.util.List;
 
 public class Aula {
     private String nome;
-    private String instrutor;
+    private Professor professor;
     private int capacidadeMaxima;
     private List<Membro> listaMembrosInscritos;
 
-    public Aula(int capacidadeMaxima, String instrutor, String nome) {
+    public Aula(int capacidadeMaxima, String nome) {
         this.capacidadeMaxima = capacidadeMaxima;
-        this.instrutor = instrutor;
         this.nome = nome;
         this.listaMembrosInscritos = new ArrayList<>();
     }
@@ -21,8 +22,12 @@ public class Aula {
         return nome;
     }
 
-    public String getInstrutor() {
-        return instrutor;
+    public Professor getProfessor() {
+        return professor;
+    }
+
+    public void setProfessor(Professor professor) {
+        this.professor = professor;
     }
 
     public int getCapacidadeMaxima() {
@@ -32,6 +37,7 @@ public class Aula {
     public List<Membro> getListaMembrosInscritos() {
         return listaMembrosInscritos;
     }
+
 
     public boolean inscreverMembro(Membro membro){
         if(membro.isPagamentoEmDia() && verificarDisponibilidade()){
@@ -60,7 +66,7 @@ public class Aula {
     public String toString() {
     return "Aula{" +
             "nome='" + nome + '\'' +
-            ", instrutor='" + instrutor + '\'' +
+            ", instrutor='" + professor + '\'' +
             ", capacidadeMaxima=" + capacidadeMaxima +
             ", membrosInscritos=" + listaMembrosInscritos.size() +
     

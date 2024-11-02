@@ -51,10 +51,12 @@ public class Academia {
     }
 
     public void listarAulas(){
-        System.out.println("Aula Disponíveis: ");
+        System.out.println("Aulas Disponíveis: ");
         for(Aula aula : listAulas){
-            System.out.println("- " + aula.getNome() + "(Instrutor: " + aula.getInstrutor());
+            System.out.println("- " + aula.getNome() + " (Instrutor: " +
+                    (aula.getProfessor() != null ? aula.getProfessor().getNome() : "Nenhum") + ")");
         }
     }
-    
+
+
 }
