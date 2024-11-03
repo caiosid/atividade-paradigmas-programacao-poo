@@ -24,6 +24,7 @@ public class App {
         );
 
         AulaPresencial pilates = new AulaPresencial(
+                02,
                 "Pilates"
         );
 
@@ -60,6 +61,7 @@ public class App {
         );
 
         AulaPresencial musculacao = new AulaPresencial(
+                01,
                 "Musculacao"
         );
 

@@ -1,11 +1,10 @@
 package academia.aulas;
 
-import academia.membros.Professor;
 
 public class AulaOnline extends Aula {
     
-    public AulaOnline( String nome) {
-        super(10, nome);
+    public AulaOnline(int id, String nome) {
+        super(id, 10, nome);
     }
 
     @Override

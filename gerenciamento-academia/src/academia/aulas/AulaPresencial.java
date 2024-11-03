@@ -4,8 +4,8 @@ import academia.membros.Professor;
 
 public class AulaPresencial extends Aula{
     
-    public AulaPresencial(String nome) {
-        super(5, nome);
+    public AulaPresencial(int id,String nome) {
+        super(id, 5, nome);
     }
 
     @Override

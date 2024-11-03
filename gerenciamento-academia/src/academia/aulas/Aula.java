@@ -7,15 +7,21 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class Aula {
+    private int id;
     private String nome;
     private Professor professor;
     private int capacidadeMaxima;
     private List<Membro> listaMembrosInscritos;
 
-    public Aula(int capacidadeMaxima, String nome) {
+    public Aula(int id,int capacidadeMaxima, String nome) {
+        this.id = id;
         this.capacidadeMaxima = capacidadeMaxima;
         this.nome = nome;
         this.listaMembrosInscritos = new ArrayList<>();
+    }
+
+    public int getId() {
+        return id;
     }
 
     public String getNome() {
